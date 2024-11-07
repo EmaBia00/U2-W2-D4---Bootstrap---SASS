@@ -25,7 +25,20 @@ $border-widths: map-merge($border-widths, $custom-border-widths);
 
 // border-radius variables
 $btn-border-radius: var(--#{$prefix}border-radius-pill);
+$btn-border-radius-lg: var(--#{$prefix}border-radius-pill);
 $input-border-radius: var(--#{$prefix}border-radius-pill);
 $badge-border-radius: var(--#{$prefix}border-radius-pill);
 
-$card-bg: var(--#{$prefix}"dark") !default;
+// Cards
+$card-bg: $dark;
+$card-color: $info;
+$card-border-radius: 2rem;
+
+// Colors
+$custom-theme-colors: (
+  "epicode-1": #5726c3,
+  "epicode-2": #8625a5,
+  "epicode-3": #cb2376,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
